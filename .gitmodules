@@ -1,0 +1,3 @@
+[submodule "comfy_controlnet_preprocessors"]
+	path = comfy_controlnet_preprocessors
+	url = https://github.com/Fannovel16/comfy_controlnet_preprocessors
