@@ -2,3 +2,6 @@
 	path = comfy_controlnet_preprocessors
 	url = https://github.com/Fannovel16/comfy_controlnet_preprocessors
 	branch = main
+[submodule "comfy_ckpt_utils"]
+	path = comfy_ckpt_utils
+	url = https://github.com/Fannovel16/comfy_ckpt_utils
