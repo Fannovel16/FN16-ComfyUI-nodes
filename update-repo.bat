@@ -5,7 +5,7 @@ git checkout main
 git add .
 git commit -a -m %1
 git push
-cd ..\comfy_ckpt_utils
+cd ..\comfyui_video
 git checkout main
 git add .
 git commit -a -m %2
