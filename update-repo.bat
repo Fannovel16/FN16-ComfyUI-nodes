@@ -3,12 +3,12 @@
 cd comfy_controlnet_preprocessors
 git checkout main
 git add .
-git commit -a -m %1
+git commit -m %2
 git push
-cd ..\comfyui_video
+cd ..\comfy_latent_list
 git checkout main
 git add .
-git commit -a -m %2
+git commit -m %1
 git push
 cd ..
 git submodule update --remote --merge
