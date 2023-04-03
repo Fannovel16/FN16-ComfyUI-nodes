@@ -5,7 +5,7 @@ git checkout main
 git add .
 git commit -m %2
 git push
-cd ..\comfy_latent_list
+cd ..\comfy_video
 git checkout main
 git add .
 git commit -m %1
