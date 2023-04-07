@@ -2,7 +2,7 @@
 A collection of my custom nodes for [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 Current custom nodes repos:
 * [Comfy ControlNet Preprocessors](https://github.com/Fannovel16/comfy_controlnet_preprocessors)
-* [Comfy Ckpt Utils](https://github.com/Fannovel16/comfy_ckpt_utils)
+* [Comfy Video](https://github.com/Fannovel16/comfy_video)
 ## Install
 ```sh
 cd ComfyUI/custom_nodes

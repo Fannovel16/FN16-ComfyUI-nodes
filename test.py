@@ -1,14 +1,18 @@
-import cv2
+import imageio.v3 as iio
 import numpy as np
-import torch
-import einops
 
-# Create a sample PyTorch tensor
-tensor = torch.zeros(1, 256, 512, 3)
+# Create a new GIF file and open it for writing
+filename = 'example.gif'
+writer = iio.imopen(filename, 'w')
 
-tensor = einops.rearrange(tensor, "1 w h ch -> h w ch")
-print(tensor.shape)
+# Loop through the frames and write each one to the file
+for i in range(10):
+    # Create a new frame (replace this with your own image data)
+    frame = 255 * np.random((100, 100, 3), dtype=np.uint8)
+    frame[i % 3, :, :] = 0
+    
+    # Write the frame to the file
+    writer.write(frame)
 
-# Convert the numpy array to an OpenCV image
-image = cv2.cvtColor(tensor.detach().cpu().numpy(), cv2.COLOR_RGB2BGR)
-print(image.shape)
+# Close the writer to finalize the file
+writer.close()
