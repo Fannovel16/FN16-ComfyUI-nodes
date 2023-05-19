@@ -24,11 +24,11 @@ def get_ffmpeg_build_url():
         return "ffmpeg-n6.0-latest-linux64-gpl-6.0.tar.xz"
     return None
     
-print("----------INSTALLING DEPENDENCIES----------")
-os.system("pip install -r requirements.txt")
+# print("----------INSTALLING DEPENDENCIES----------") ## Still no requirements.txt ATM
+# os.system("pip install -r requirements.txt")
 print("----------INSTALLING FFMPEG----------")
 try:
-    subprocess.check_output(['ffmpeg', '--version'])
+    subprocess.check_output(['ffmpeg', '-version'])
     print('ffmpeg is already installed.')
 except OSError:
     print('ffmpeg is not installed.')
